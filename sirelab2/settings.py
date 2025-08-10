@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'attention',
+    'activitie',
 ]
 
 MIDDLEWARE = [
@@ -75,10 +78,15 @@ WSGI_APPLICATION = 'sirelab2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',  # o IP si es remota
+        'PORT': '5432',       # puerto por defecto
     }
 }
+
 
 
 # Password validation
