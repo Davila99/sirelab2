@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from activitie.models import EventoSoporteTecnico, TipoActividad
+
+admin.site.register(TipoActividad)
+admin.site.register(EventoSoporteTecnico)
