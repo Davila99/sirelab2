@@ -1,5 +1,7 @@
 from rest_framework import viewsets
-from .models import TipoActividad, EventoSoporteTecnico
+
+from activitie.models import EventoSoporteTecnico, TipoActividad
+
 from .serializers import TipoActividadSerializer, EventoSoporteTecnicoSerializer
 
 class TipoActividadViewSet(viewsets.ModelViewSet):
