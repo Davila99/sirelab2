@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'sirelab2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'sirelab1',
         'USER': 'postgres',
         'PASSWORD': 'root',
         'HOST': 'localhost',  # o IP si es remota
