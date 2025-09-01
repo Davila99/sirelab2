@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'attention',
     'activitie',
     'corsheaders',
+    'mantenimiento',
 ]
 
 MIDDLEWARE = [
