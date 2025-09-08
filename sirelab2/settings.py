@@ -82,13 +82,17 @@ WSGI_APPLICATION = 'sirelab2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres.tfczkqpyqlcomumsgyjl',
-        'PASSWORD': 'Uraccan2025"#"',
-        'HOST': 'aws-0-us-east-2.pooler.supabase.com',  # usa el host completo
+        'NAME': 'sirelab',
+        'USER': 'soportedev',
+        'PASSWORD': 'TfsCAXLuvkQJqg2',
+        'HOST': 'sirelab2025.postgres.database.azure.com',
         'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
+
 
 
 
