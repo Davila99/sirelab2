@@ -82,13 +82,14 @@ WSGI_APPLICATION = 'sirelab2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sirelab',
-        'USER': 'soportedev',
-        'PASSWORD': 'TfsCAXLuvkQJqg2',
-        'HOST': 'sirelab2025.postgres.database.azure.com',
+        'NAME': 'neondb',
+        'USER': 'neondb_owner',
+        'PASSWORD': 'npg_J0oGMEy7uFVf',
+        'HOST': 'ep-solitary-heart-afnu5rms-pooler.c-2.us-west-2.aws.neon.tech',
         'PORT': '5432',
         'OPTIONS': {
             'sslmode': 'require',
+            'channel_binding': 'require',
         },
     }
 }
