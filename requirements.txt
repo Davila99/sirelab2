@@ -1,0 +1,12 @@
+# Framework principal
+Django>=5.0,<6.0
+
+# Django REST Framework
+djangorestframework>=3.15.0
+
+# Para manejar CORS
+django-cors-headers>=4.4.0
+
+# Driver para PostgreSQL
+psycopg2-binary>=2.9.9
+
