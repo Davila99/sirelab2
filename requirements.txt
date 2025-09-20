@@ -12,6 +12,9 @@ psycopg2-binary>=2.9.9
 # Servidor WSGI para producción
 gunicorn
 # Librería para manejar variables de entorno
+python-dotenv
+# Librería para servir archivos estáticos en producción
+whitenoise
 
 
 
