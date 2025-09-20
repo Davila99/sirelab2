@@ -14,5 +14,5 @@ router.register(r'tipos-equipo-recurso', TipoEquipoRecursoViewSet)
 router.register(r'atenciones-incidencias', AtencionIncidenciaViewSet)
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]
