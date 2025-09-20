@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 from django.views.generic import RedirectView
 admin.site.site_header = "URACCAN TechAssist"
 admin.site.site_title = "URACCAN TechAssist - Admin"
@@ -23,5 +23,8 @@ admin.site.index_title = "Bienvenido a URACCAN TechAssist"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-        path('', RedirectView.as_view(url='/admin/', permanent=True)),
+    path('', RedirectView.as_view(url='/admin/', permanent=True)),
+
+    path('api/activitie/', include('activitie.api.urls')),
+    path('api/mantenimiento/', include('mantenimiento.api.urls')),
 ]
