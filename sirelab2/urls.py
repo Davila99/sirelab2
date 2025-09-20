@@ -24,7 +24,7 @@ admin.site.index_title = "Bienvenido a URACCAN TechAssist"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', RedirectView.as_view(url='/admin/', permanent=True)),
-
+    path('api/attention/', include('attention.api.urls')),
     path('api/activitie/', include('activitie.api.urls')),
     path('api/mantenimiento/', include('mantenimiento.api.urls')),
 ]
