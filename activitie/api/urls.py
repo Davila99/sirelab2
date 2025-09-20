@@ -7,5 +7,5 @@ router.register(r'tipos-actividad', TipoActividadViewSet)
 router.register(r'eventos-soporte', EventoSoporteTecnicoViewSet)
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]
