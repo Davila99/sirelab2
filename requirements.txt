@@ -9,4 +9,9 @@ django-cors-headers>=4.4.0
 
 # Driver para PostgreSQL
 psycopg2-binary>=2.9.9
+# Servidor WSGI para producción
+gunicorn
+# Librería para manejar variables de entorno
+
+
 
